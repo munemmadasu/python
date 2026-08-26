@@ -5,7 +5,7 @@ import numpy as np
 def show_executive_insights_page(app_df, bureau_df=None, inst_df=None, cc_df=None):
     st.title("Page 20 – Executive Insights & Business Recommendations")
     if app_df is None or app_df.empty:
-        st.warning("application_train.csv missing.")
+        st.warning("data/application_train.csv missing.")
         return
 
     # Metrics Calculations
